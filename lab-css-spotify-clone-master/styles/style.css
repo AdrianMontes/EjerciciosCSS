@@ -6,3 +6,95 @@ Green: #00B172
 White: #FFF
 
 */
+@font-face {
+    font-family: 'NicholsonGothic';
+    src: url('NicholsonGothic-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+* {
+    font-family: 'NicholsonGothic', sans-serif;
+}
+
+#spotify-logo {
+    width: 30%;
+    float: left;
+}
+
+#background-image {
+    background-image: url(../images/landing.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 400px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 250%;
+}
+
+h3:not(.kanye) {
+    text-align: center;
+}
+
+.subrayado {
+    border-bottom: 3px solid #00B172;
+}
+
+#onSpotify {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#onSpotify table {
+    text-align: center;
+}
+
+#music-icon, #high-quality, #devices {
+    width: 30%;
+    margin: 0 auto;
+}
+
+img ~ h3 {
+    color: #00B172;
+}
+
+#kanye-west {
+    background-color: #00B172;
+    color: white;
+    padding: 50px;
+    position: relative;
+    font-size: 20px;
+}
+
+h2 > .subrayado {
+    border-bottom: 3px solid white;
+}
+
+#spotify-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10%;
+    transform: translate(-50%, -50%);
+}
+
+#spotify-app {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    width: 25%;
+    height: 90%;
+    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+}
