@@ -1004,3 +1004,209 @@ crossbow {
 
 ---
 ---
+# **align-content**
+# Nivel 1
+![Error](resources/FlexboxZombie_10_1.png)
+
+---
+# Nivel 2
+![Error](resources/FlexboxZombie_10_2.png)
+
+---
+# Nivel 3
+![Error](resources/FlexboxZombie_10_3.png)
+
+---
+# Nivel 4
+![Error](resources/FlexboxZombie_10_4.png)
+
+---
+# Nivel 5
+![Error](resources/FlexboxZombie_10_5.png)
+
+---
+# Nivel 6
+![Error](resources/FlexboxZombie_10_6.png)
+
+---
+# Nivel 7
+![Error](resources/FlexboxZombie_10_7.png)
+
+---
+# Nivel 8
+![Error](resources/FlexboxZombie_10_8.png)
+
+---
+# Nivel 9
+![Error](resources/FlexboxZombie_10_9.png)
+
+---
+# Nivel 10
+![Error](resources/FlexboxZombie_10_10.png)
+
+---
+# Nivel 11
+![Error](resources/FlexboxZombie_10_11.png)
+
+---
+# Nivel 12
+![Error](resources/FlexboxZombie_10_12.png)
+
+---
+# Nivel 13
+![Error](resources/FlexboxZombie_10_13.png)
+
+---
+---
+# **flex**
+# Nivel 1
+![Error](resources/FlexboxZombie_11_1.png)
+
+---
+# Nivel 2
+![Error](resources/FlexboxZombie_11_2.png)
+
+---
+# Nivel 3
+![Error](resources/FlexboxZombie_11_3.png)
+
+---
+# Nivel 4
+![Error](resources/FlexboxZombie_11_4.png)
+
+---
+# Nivel 5
+![Error](resources/FlexboxZombie_11_5.png)
+
+---
+# Nivel 6
+![Error](resources/FlexboxZombie_11_6.png)
+
+---
+# Nivel 7
+![Error](resources/FlexboxZombie_11_7.png)
+
+---
+# Nivel 8
+![Error](resources/FlexboxZombie_11_8.png)
+
+---
+# Nivel 9
+![Error](resources/FlexboxZombie_11_9.png)
+
+---
+# Nivel 10
+![Error](resources/FlexboxZombie_11_10.png)
+
+---
+# Nivel 11
+![Error](resources/FlexboxZombie_11_11.png)
+
+crossbow {
+  display: flex;
+  align-items: center;
+}
+
+.target.goo {
+  flex: 0 0 25%;
+}
+
+.target:nth-of-type(3) {
+  align-self: stretch;
+}
+
+---
+# Nivel 12
+![Error](resources/FlexboxZombie_11_12.png)
+
+f
+
+---
+---
+# **To the Death**
+# Nivel 1
+![Error](resources/FlexboxZombie_12_1.png)
+
+---
+# Nivel 2
+![Error](resources/FlexboxZombie_12_2.png)
+
+---
+# Nivel 3
+![Error](resources/FlexboxZombie_12_3.png)
+
+---
+# Nivel 4
+![Error](resources/FlexboxZombie_12_4.png)
+
+---
+# Nivel 5
+![Error](resources/FlexboxZombie_12_5.png)
+
+---
+# Nivel 6
+![Error](resources/FlexboxZombie_12_6.png)
+
+---
+# Nivel 7
+![Error](resources/FlexboxZombie_12_7.png)
+
+crossbow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.target:nth-of-type(2) {
+  align-self: stretch;
+}
+
+.target:nth-of-type(3) {
+  flex: 1 0 auto;
+}
+
+---
+# Nivel 8
+![Error](resources/FLexboxZombie_12_8.png)
+
+crossbow {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+}
+
+.target:nth-of-type(2) {
+  align-self: stretch;
+  flex: 1 2 auto;
+}
+
+.target:nth-of-type(3) {
+  align-self: flex-start;
+}
+
+.target:nth-of-type(4) {
+  
+}
+
+---
+# Nivel 9
+![Error](resources/FlexboxZombie_12_9.png)
+
+crossbow {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.target.dave {
+  order: 1;
+  align-self: flex-start;
+}
+  
+.target.goo {
+  order: 0;
+  align-self: flex-end;
+}
+
+---
+![Error](resources/FlexboxZombie_Finale.png)
