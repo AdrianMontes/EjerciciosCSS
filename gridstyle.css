@@ -1,0 +1,107 @@
+#header {
+    color: white;
+    background-color: black;
+}
+#menu {
+    color: white;
+    background-color: red;
+}
+#hero {
+    color: white;
+    background-color: dodgerblue;
+}
+#main {
+    color: white;
+    background-color: darkblue;
+}
+#banner {
+    background-color: orange;
+}
+#extra {
+    background-color: seagreen;
+}
+#image {
+    background-color: aquamarine;
+}
+div {
+    text-align: center;
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+    #container {
+        display: grid;
+        grid-template-rows: repeat(20, 35px);
+    }
+    #hero, #main {
+        grid-row: span 3;
+    }
+    #banner, #extra, #image {
+        grid-row: span 2;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    #container {
+        display: grid;
+        grid-template-rows: repeat(20, 30px);
+        grid-template-columns: 100px 480px auto;
+    }
+    #header {
+        grid-column: span 3;
+    }
+    #hero {
+        grid-row: 2 / 7;
+        grid-column: span 3;
+    }
+    #menu {
+        grid-row: span 15;
+    }
+    #main {
+        grid-row: span 7;
+        grid-column: span 2;
+    }
+    #banner {
+        grid-row: span 4;
+        grid-column: span 2;
+    }
+    #extra, #image {
+        grid-row: span 4;
+    }
+}
+@media (min-width: 1024px) {
+    #container {
+        display: grid;
+        grid-template-areas: 
+        "header menu menu menu"
+        "hero hero hero hero"
+        "main main vacio image"
+        "main main vacio extra"
+        "banner banner banner banner";
+    }
+    #menu {
+        grid-area: menu;
+        height: 35px;
+    }
+    #header {
+        grid-area: header;
+        height: 35px;
+    }
+    #hero {
+        grid-area: hero;
+        height: 200px;
+    }
+    #main {
+        grid-area: main;
+        height: 150px;
+    }
+    #banner {
+        grid-area: banner;
+        height: 100px;
+    }
+    #extra {
+        grid-area: extra;
+    }
+    #image {
+        grid-area: image;
+    }
+}

@@ -29,25 +29,8 @@
     }
 
     body {
-      column-count: 3;
-      column-gap: 0;
       color: white;
       font-family: 'Lexend Deca', sans-serif;
-    }
-
-    .separar {
-      display: inline-block;
-      width: 100%;
-      break-after: column;
-    }
-
-    div {
-      padding-top: 50px;
-      padding-left: 30px;
-      padding-right: 30px;
-      height: 500px;
-      margin: 0;
-      box-sizing: border-box;
     }
 
     #Sedans {
@@ -61,27 +44,105 @@
     #Luxury {
       background-color: darkslategray;
     }
+    
+    .learnmore {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      height: 50px;
+      border-radius: 30px;
+    }
+
+    #Sedans .learnmore {
+      color: coral;
+    }
+
+    #Sedans .learnmore:hover {
+      color: white;
+      background-color: coral;
+      outline: 3px solid white;
+    }
+
+    #SUVs .learnmore {
+      color: darkcyan;
+    }
+
+    #SUVs .learnmore:hover {
+      color: white;
+      background-color: darkcyan;
+      outline: 3px solid white;
+    }
+
+    #Luxury .learnmore {
+      color: darkslategray;
+    }
+
+    #Luxury .learnmore:hover {
+      color: white;
+      background-color: darkslategray;
+      outline: 3px solid white;
+    }
+
+    @media (max-width: 720px) {
+    #container {
+      display: grid;
+      grid-template-rows: repeat(3, 400px);
+      grid-template-columns: auto;
+    }
+
+    div:not(.learnmore) {
+      padding-top: 50px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    .learnmore {
+      width: 200px;
+    }
+}
+    @media (min-width: 721px) {
+    #container {
+      display: grid;
+      grid-template-rows: 500px;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    div:not(.learnmore) {
+      padding-top: 50px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+}
   </style>
 </head>
 
 <body>
-  <div id="Sedans">
-    <img src="images/icon-sedans.svg" alt="">
-    <h1>Sedans</h1> <br>
-    Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city
-    or on your next road trip.<span class="separar"></span></span>
-  </div>
-  <div id="SUVs">
-    <img src="images/icon-suvs.svg" alt="">
-    <h1>SUVs</h1> <br>
-    Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation
-    and off-road adventures.<span class="separar"></span></span>
-  </div>
-  <div id="Luxury">
-    <img src="images/icon-luxury.svg" alt="">
-    <h1>Luxury</h1> <br>
-    Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury
-    rental and arrive in style.
+  <div id="container">
+    <div id="Sedans">
+      <img src="images/icon-sedans.svg" alt="">
+      <h1>Sedans</h1> <br>
+      Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city
+      or on your next road trip.
+      <br><br><br>
+      <div class="learnmore">Learn more</div>
+    </div>
+    <div id="SUVs">
+      <img src="images/icon-suvs.svg" alt="">
+      <h1>SUVs</h1> <br>
+      Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation
+      and off-road adventures.
+      <br><br><br>
+      <div class="learnmore">Learn more</div>
+    </div>
+    <div id="Luxury">
+      <img src="images/icon-luxury.svg" alt="">
+      <h1>Luxury</h1> <br>
+      Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury
+      rental and arrive in style.
+      <br><br><br>
+      <div class="learnmore">Learn more</div>
+    </div>
   </div>
 </body>
 
