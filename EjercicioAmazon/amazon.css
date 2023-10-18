@@ -15,6 +15,10 @@ body {
 a {
     color: steelblue;
 }
+hr {
+    border-color: lightgray;
+    border-width: 0.1px;
+}
 #header1 a {
     align-self: center;
 }
@@ -176,7 +180,7 @@ ul li::marker {
     height: 50%;
     line-height: 0.2;
 }
-#carrito {
+.carrito {
     display: flex;
     border: 2px solid darkslateblue;
     border-top-left-radius: 30px;
@@ -265,4 +269,36 @@ ul li::marker {
 #information_cart_socials img {
     width: 30px;
     height: 30px;
+}
+
+.titular {
+    color: #CC6C19;
+}
+
+#frequently_bought_together {
+    display: flex;
+    flex-direction: column;
+    width: 37%;
+}
+#frequently_bought_together_items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#frequently_bought_together_items img {
+    width: 70px;
+    height: 70px;
+}
+#frequently_bought_together_items span {
+    color: gray;
+    font-size: 20px;
+    font-weight: bold;
+}
+#frequently_bought_together ul, #product_details ul {
+    list-style: none;
+}
+
+#product_details_education li {
+    margin-bottom: 15px;
 }
